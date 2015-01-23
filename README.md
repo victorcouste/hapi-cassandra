@@ -10,22 +10,26 @@
 
   Create your nodejs project
   ```
-  $npm init```
+  $npm init
+  ```
 
 
 - Install **hapi** a server framework for builing application and services (rest api) for nodejs http://hapijs.com/
 
   ```
-  $npm install hapi -save```
+  $npm install hapi -save
+  ```
 
 - Install **joi** hapi plugin for object schema validation https://github.com/hapijs/joi
 
   ```
-  $npm install --save joi```
+  $npm install --save joi
+  ```
 
 - Install **Cassandra Nodejs driver** from https://github.com/datastax/nodejs-driver
   ```
-  $npm install --save cassandra-driver```
+  $npm install --save cassandra-driver
+  ```
 
 - In your Cassandra cluster, create the keyspace and tables
 
@@ -34,14 +38,16 @@
 - Run HTTP Nodejs server
 
   ```
-  $node server.js```
+  $node server.js
+  ```
 
 - Test the REST API
 
   - In command line with curl
 
   ```
-  $curl  ```
+  $curl
+  ```
 
   - With a Web browser
 
