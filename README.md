@@ -2,6 +2,7 @@
 #REST API on top of Cassandra database with hapi Nodejs framework
 
 
+
 ##Installation
 
 - Clone all js files in a directory
