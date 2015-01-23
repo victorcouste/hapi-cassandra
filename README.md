@@ -1,5 +1,5 @@
 
-#HTTP API on top of Cassandra with Nodejs and HAPI
+#REST API on top of Cassandra database with hapi Nodejs framework
 
 
 ##Installation
