@@ -4,7 +4,7 @@
 
 ##Installation
 
-- Copy all js files in a directory
+- Clone all js files in a directory
 
 - Install **Nodejs** : depending of your OS see https://github.com/joyent/node/wiki/installation for installation instructions
 
