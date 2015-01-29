@@ -7,7 +7,7 @@
 
 - You need a Cassandra cluster running, for download and installation instructions  http://planetcassandra.org/cassandra/
 
-- Clone all js files in a directory
+- Clone all js files in a local directory
 
 - Install **Nodejs** : depending of your OS see https://github.com/joyent/node/wiki/installation for installation instructions
 
@@ -34,7 +34,7 @@
   $npm install --save cassandra-driver
   ```
 
-- In your Cassandra cluster, create the keyspace and tables
+- In your Cassandra cluster, create the keyspace and the table with CQL found in services_ks.cql file
 
 ##Using
 
@@ -51,31 +51,31 @@
 
   Create a service
   ```
-  $ curl -X POST -H "Content-Type: application/json" -d '{"title":"The best service"}' http://localhost:3000/service/create -i
+  $curl -X POST -H "Content-Type: application/json" -d '{"title":"The best service"}' http://localhost:3000/service/create -i
   ```
 
   Add a user using this service
   ```  
-  $ curl -X POST -H "Content-Type: application/json" -d '{"id":"d0f60aa8-54a9-4840-b70c-fe562b68842b","user":"victor"}' http://localhost:3000/service/user -i
+  $curl -X POST -H "Content-Type: application/json" -d '{"id":"d0f60aa8-54a9-4840-b70c-fe562b68842b","user":"victor"}' http://localhost:3000/service/user -i
   ```
 
   Get all users for a service
   ```
-  $ curl -X GET http://localhost:3000/service/d0f60aa8-54a9-4840-b70c-fe562b68842b -i
+  $curl -X GET http://localhost:3000/service/d0f60aa8-54a9-4840-b70c-fe562b68842b -i
   ```
 
   Get all services
   ```  
-  $ curl -X GET http://localhost:3000/services -i
+  $curl -X GET http://localhost:3000/services -i
   ```
 
   Delete a service
   ```
-  $ curl -X DELETE http://localhost:3000/service/delete/c391b62c-5e72-4e5d-ae74-6a5acd0a3ac3 -i
+  $curl -X DELETE http://localhost:3000/service/delete/c391b62c-5e72-4e5d-ae74-6a5acd0a3ac3 -i
   ```
 
   - With a Web browser
 
       http://localhost:3000/services
 
-  - With a REST client like Postman for http://www.getpostman.com/
+  - With a REST client like Postman http://www.getpostman.com/
