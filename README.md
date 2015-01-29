@@ -1,7 +1,9 @@
 
 #REST API on top of Cassandra database with hapi Nodejs framework
 
-
+The goal of this project is to create a very simple REST API on top of Cassandra tables.
+In this example, services are created and used by users at a defined date.
+In coming versions there will be more Cassandra and DataStax Enterprise features like TTL and Spark usage. An interface is also planned to play with the API.
 
 ##Installation
 
